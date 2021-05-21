@@ -1,0 +1,144 @@
+:root {
+  --corPrincipal: #92c1ee;
+  --corSecundaria: #fff;
+  --corBorda: #dfdfdf;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+input {
+  padding: 8px;
+  border-radius: 3px;
+  border-style: solid;
+  border: solid var(--corBorda) thin;
+}
+
+div.container {
+  margin: 7% auto;
+  max-width: 700px;
+  border: solid 1px var(--corPrincipal);
+}
+
+div.container h2 {
+  background-color: var(--corPrincipal);
+  padding: 20px 50px;
+}
+
+div.container form {
+  padding: 20px 50px;
+}
+
+div.linha-1 {
+  display: flex;
+  width: 100%;
+}
+
+div.linha-1 .form-nome {
+  width: 40%;
+}
+
+div.linha-1 .form-nome input {
+  width: 90%;
+}
+
+div.linha-1 .form-email {
+  width: 60%;
+}
+
+div.linha-1 .form-email input {
+  width: 100%;
+}
+
+div.linha-2 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+div.linha-2 .form-senha {
+  width: 30%;
+}
+
+div.linha-2 .form-senha input {
+  width: 90%;
+}
+
+div.linha-2 select {
+  padding: 8px;
+  width: 100%;
+  border-radius: 3px;
+  border: solid var(--corBorda) thin;
+  background: transparent;
+}
+
+div.linha-2 .form-sexo {
+  width: 30%;
+}
+
+div.linha-2 .form-dev {
+  width: 30%;
+}
+
+div.linha-3 {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+}
+
+div.linha-3 .form-area {
+  width: 100%;
+}
+
+div.linha-3 .form-area textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 3px;
+  border: solid var(--corBorda) thin;
+}
+
+div.linha-4 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button {
+  border-radius: 5px;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 800;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+button:first-of-type {
+  background: var(--corPrincipal);
+  padding: 8px;
+  border: none;
+  color: var(--corSecundaria);
+  margin-right: 15px;
+}
+
+button:last-of-type {
+  background: transparent;
+  border-color: var(--corPrincipal);
+  border-style: solid;
+  color: var(--corPrincipal);
+  padding: 8px;
+}
